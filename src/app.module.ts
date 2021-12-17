@@ -17,6 +17,8 @@ import { UserModule } from './user/user.module';
         migrationsDir: 'src/migration',
       },
       synchronize: false,
+
+      //  autoLoadEntities: false,
     }),
     UserModule,
   ],
