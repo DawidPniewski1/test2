@@ -12,13 +12,13 @@ import { UserModule } from './user/user.module';
       password: '',
       database: 'test2',
       entities: ['dist/**/**.entity{.ts,.js}'],
-      migrations: ['src/migration/*{.ts,.js}'],
-      cli: {
-        migrationsDir: 'src/migration',
-      },
-      synchronize: false,
-
-      //  autoLoadEntities: false,
+      // migrationsTableName: 'migrations',
+      migrations: ['src/migrations/*.ts'],
+      // cli: {
+      //   migrationsDir: 'src/migrations',
+      // },
+      synchronize: true,
+      //  synchronize: true,
     }),
     UserModule,
   ],
